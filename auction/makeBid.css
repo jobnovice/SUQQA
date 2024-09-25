@@ -1,0 +1,96 @@
+       .emptyCart {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           font-family: Verdana, Arial, sans-serif;
+       }
+       
+       h1 {
+           color: #0A9055;
+       }
+       
+       h3,
+       h4 {
+           color: #E3E2E5;
+           margin: 0.3%;
+       }
+       
+       .emptyCartImg {
+           width: 20rem;
+           height: 20rem;
+           margin-bottom: 2%;
+       }
+       
+       .go-home {
+           -webkit-border-radius: 7;
+           -moz-border-radius: 7;
+           border-radius: 7px;
+           font-family: Arial;
+           color: #ffffff;
+           font-size: 20px;
+           background: #0A9055;
+           padding: 10px 20px 10px 20px;
+           text-decoration: none;
+           margin: 2%;
+           font-family: Verdana, Arial, sans-serif;
+       }
+       
+       .go-home:hover {
+           background: white;
+           color: #0A9055;
+           text-decoration: none;
+       }
+       
+       .go-to-payment {
+           display: flex;
+           justify-content: center;
+       }
+       
+       .total-price {
+           font-family: Verdana, Arial, sans-serif;
+           margin: 2%;
+           background-color: #0A9055;
+           color: white;
+           height: 6.2rem;
+           /* display: inline-block; */
+           width: 10rem;
+           margin-left: auto;
+           justify-content: center;
+           /* flex-basis: 100px; */
+           border-radius: 6%;
+       }
+       
+       .total-price p {
+           font-size: 2.4rem;
+           margin-bottom: 0px;
+           margin: 0;
+           display: flex;
+           justify-content: center;
+           /* padding:4px; */
+       }
+       
+       .total-price .totalp {
+           display: flex;
+           padding: 4px;
+           justify-content: start;
+           margin: 0;
+           color: #A8B7A8;
+       }
+       
+       .total-price .etb {
+           display: flex;
+           padding: 4px;
+           justify-content: end;
+           margin: 0;
+       }
+       
+       #main-auction-page {
+           /* width:100%; */
+           display: flex;
+           flex-wrap: wrap;
+           gap: 20px;
+           /* flex-direction: column; */
+           margin-top: 10%;
+           justify-content: center;
+       }

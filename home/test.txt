@@ -1,0 +1,73 @@
+<form method="POST" action='' enctype="multipart/form-data">
+        <input type="file" name="photo">
+        <input type="submit" value="Upload" name="upload">
+    </form>
+
+    <?php
+
+if (isset($_POST['upload'])) {
+    $tmpImagePath = $_FILES['photo']['tmp_name'];
+    
+    // Read the image data
+    $imageData = file_get_contents($tmpImagePath);
+    
+    // Prepare the SQL statement
+    $stmt = $conn2->prepare("INSERT INTO images (image_data) VALUES (?)");
+    $stmt->bind_param("b", $imageData);
+    
+    // Execute the SQL statement
+    if ($stmt->execute()) {
+        echo "Image uploaded and stored in the database.";
+    } else {
+        echo "Error storing the image in the database: " . $conn2->error;
+    }
+    }
+
+    ?>
+
+<form method="post" action="">
+        <p class="name">
+            <label for="name" class="name">Name: </label>
+            <input type="text" name="txtName" id="txtName" required>
+            </p>
+        <p class="price">
+            <label for="price" class="price">Price: </label>
+            <input type="text" name="txtPrice" id="txtPrice" required>
+            </p>
+
+            <p>
+            <input type="file" id="filename" name="filename">
+            </p>
+            <p>
+            <input type="submit" name="upload2" id="upload2" value="Submit">
+            </p>
+    </form>
+
+    <?php
+if (isset($_POST['upload2'])) {
+
+    $name = $_POST['txtName'];
+
+    $price = $_POST['txtPrice'];
+
+    $image = $_POST['filename'];
+
+
+    $sql = "INSERT INTO `pictures` (`name`, `location`) VALUES ('$name', '$image')";
+    $result = $conn2->query($sql);
+}
+
+$sql = "SELECT * FROM pictures";
+$result = $conn2->query($sql);
+if($result->num_rows > 0){
+    while($row=$result->fetch_assoc()){
+        $id=$row['id'];
+        echo '<div class="m1">';
+        echo '<img src="../images/'.$row['location'].'" class="users">';
+        echo '<p class="d1">'.$row['name'].'</p>';
+        echo '<p class="p1">'.$row['location'].'<span class="s1" style="margin-left:10px">ETB</span></p>';
+        echo '</div><br>';
+    }
+}
+mysqli_close($conn2);
+    ?>

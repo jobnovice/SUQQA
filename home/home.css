@@ -1,0 +1,133 @@
+* {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#not-Found {
+    display: none;
+}
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.no-item-h3,
+.no-item-h4 {
+    color: #E3E2E5;
+    margin: 0.3%;
+}
+
+.notFoundImg {
+    width: 30rem;
+    height: 20rem;
+    margin-bottom: 2%;
+}
+
+.navbar {
+    display: flex;
+    height: 2.6rem;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Jost, "Source Sans Pro";
+    padding: 0.4rem;
+    transition: 0.5s;
+}
+
+.search {
+    margin-top: 10%;
+}
+
+#input_search {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    width: 32rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+    color: #0A9055;
+    font-size: 1.1rem;
+}
+
+#input_search::placeholder {
+    color: #999;
+}
+
+#input_search:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e4f2ec;
+}
+
+#input_search::placeholder {
+    color: #999;
+}
+
+#search-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0A9055;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 14rem;
+}
+
+#search-btn:hover {
+    background-color: #097b48;
+}
+
+#search-btn i {
+    margin-right: 5px;
+}
+
+.custom-select {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 14rem;
+    cursor: pointer;
+}
+
+.custom-select:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select option {
+    background-color: #ffffff;
+    color: #555555;
+}
+
+.custom-select option {
+    background-color: #0A9055;
+    color: #ffffff;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}

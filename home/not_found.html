@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            position: fixed;
+            transition: 0.6s;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            z-index: 100000;
+            background-color: #000000;
+            color: white;
+        }
+        
+        .navbar {
+            display: flex;
+            height: 4rem;
+            width: 100%;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        /* .navbar::before {
+            content: "";
+            position: absolute;
+            background-color: gray;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        } */
+        
+        .navbar-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .logo {
+            display: inline;
+            margin-right: auto;
+            order: 1;
+        }
+        
+        .navbar-links ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar-links li {
+            list-style: none;
+        }
+        
+        .navbar-links li a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            padding: 1rem;
+            font-family: Jost, 'Source Sans Pro';
+            transition: 0.5s;
+        }
+        
+        .links {
+            order: 2;
+        }
+        
+        .links ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .links ul li {
+            margin-left: 10px;
+        }
+        
+        .links ul li:first-child {
+            margin-left: 0;
+        }
+        
+        header.sticky {
+            padding: 5px 60px;
+            background-color: white;
+        }
+        
+        header.sticky li a {
+            color: #0A9055;
+        }
+        
+        .item-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            max-width: 200px;
+            /* Adjust the width as needed */
+        }
+        
+        .item-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .item-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 5px;
+        }
+        
+        .item-name {
+            font-size: 14px;
+            /* Adjust the font size as needed */
+            margin-bottom: 5px;
+        }
+        
+        .item-price {
+            font-size: 12px;
+            /* Adjust the font size as needed */
+            color: #0A9055;
+            margin-bottom: 10px;
+        }
+        
+        .add-to-cart-button {
+            background-color: #0A9055;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            /* Adjust the padding as needed */
+            font-size: 12px;
+            /* Adjust the font size as needed */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .add-to-cart-button:hover {
+            background-color: #097b48;
+        }
+        /* ////////popup///////// */
+        
+        #bidAmount,
+        input[type="number"] {
+            padding: 10px;
+            border: none;
+            width: 12rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            outline: none;
+            transition: box-shadow 0.3s ease;
+            color: #0A9055;
+            font-size: 1.1rem;
+        }
+        
+        #bidAmount::placeholder,
+        input[type="number"]::placeholder {
+            color: #999;
+        }
+        
+        #bidAmount:focus,
+        input[type="number"]:focus {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #e4f2ec;
+        }
+        
+        #submitBid,
+        button[type="submit"] {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0A9055;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #submitBid:hover,
+        button[type="submit"]:hover {
+            background-color: #097b48;
+        }
+        
+        #submitBid i,
+        button[type="submit"] i {
+            margin-right: 5px;
+        }
+        
+        .popUp {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1.25);
+            width: 380px;
+            padding: 20px 30px;
+            background: gray;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            transition: top 0ms ease-in-out 200ms, opacity 230ms ease-in-out 0ms, transform 20ms ease-in-out 3ms;
+        }
+        
+        .popUp.active {
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            transition: top 0ms ease-in-out 0ms, opacity 230ms ease-in-out 0ms, transform 20ms ease-in-out 3ms;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 15px;
+            height: 15px;
+            background: rgb(228, 20, 20);
+            color: white;
+            text-align: center;
+            line-height: 15px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        
+  
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <div class="logo">
+                    <img src="../images/logo_image.png" alt="logo image" style="height: 100px; width: 100px;">
+
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#about">Items</a></li>
+                        <li><a href="#portfolio">Users</a></li>
+                        <li><a href="#skills">Ads</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main style="margin-top: 10%;">
+        <button id="show">show</button>
+        <div class="popUp">
+            <div class="close-btn">&times;</div>
+            <form method="POST" action="">
+                <input type="number" id="bidAmount" name="bidAmount" placeholder="Make your bid" step="10.00" required>
+                <button type="submit" id="submitBid">Submit Bid</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+        document.querySelector("#show").addEventListener('click', function() {
+            document.querySelector(".popUp").classList.add("active");
+            // document.body.style.filter = 'blur(1px)';
+            // document.querySelector(".popUp").style.filter = 'none';
+
+        });
+
+        document.querySelector(".popUp .close-btn").addEventListener("click", function() {
+            document.querySelector(".popUp").classList.remove("active");
+        });
+
+        window.addEventListener("scroll", function() {
+            var nav = document.querySelector("header");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 1%;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .checkbtn {
+        display: block;
+    }
+    .links ul {
+        position: fixed;
+        width: 110%;
+        height: 100vh;
+        top: 80px;
+        left: -110%;
+        text-align: center;
+        background-color: #000000;
+        flex-direction: column;
+        transition: all 1.5s;
+        /* display: none; */
+    }
+    .links ul li {
+        display: block;
+        background-color: black;
+    }
+    .links ul li:hover {
+        border-radius: 0;
+    }
+    .links ul li a {
+        font-size: 20px;
+    }
+    #check:checked~.navbar-links .links ul {
+        /* display: block; */
+        left: -5%;
+        /* left: 0; */
+    }
+    #input_search {
+        width: 25rem;
+    }
+}

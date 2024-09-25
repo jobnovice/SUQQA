@@ -1,0 +1,1097 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+body {
+    width: 100%;
+}
+
+label {
+    color: red
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.all-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.all-container .second-container {
+    box-sizing: border-box;
+    padding: 13.2rem 7rem 10rem 7rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .top-container {
+    margin: 0rem 1.7rem 6.113rem 0rem;
+    width: calc(100% - 1.7rem);
+    height: 60.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.all-container .second-container .top-container .logo-moto-container {
+    margin: 9.7rem 5.1rem 15rem 0rem;
+    height: calc(100% - 24.7rem);
+    row-gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-container .second-container .top-container .logo-moto-container .moto {
+    max-width: 72.8rem;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1e150e;
+    font-family: Poppins, 'Source Sans Pro';
+}
+
+.all-container .second-container .top-container .logo-moto-container .moto .moto-text2 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #0A9055;
+    font-family: Poppins, 'Source Sans Pro';
+}
+
+.go-home {
+    border-radius: 7;
+    width: 36.3rem;
+    height: 6.8rem;
+    font-size: 2.6rem;
+    border-radius: 7px;
+    font-family: Arial;
+    color: #ffffff;
+    background: #0A9055;
+    padding: 10px 20px 10px 20px;
+    margin: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.go-home:hover {
+    background: white;
+    color: #0A9055;
+    text-decoration: none;
+}
+
+.all-container .second-container .top-container .logo-moto-container .second-moto {
+    max-width: 65.4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #4f463f;
+    font-family: Jost, 'Source Sans Pro';
+}
+
+
+/* .sign-up {
+    width: 36.3rem;
+    height: 6.8rem;
+    overflow: hidden;
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f17530;
+    border-radius: 2rem;
+    flex-shrink: 0;
+} */
+
+.all-container .second-container .top-container .body-logo-container {
+    width: 50.4rem;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    margin-right: auto;
+    margin-top: 7rem;
+}
+
+.all-container .second-container .top-container .body-logo-container .color4-7H5 {
+    width: 20.2rem;
+    height: 20.2rem;
+    position: absolute;
+    left: 24.4rem;
+    top: 40rem;
+    backdrop-filter: blur(2.308rem);
+    background-color: rgba(241, 149, 98, 0.7300000191);
+    border-radius: 10.1rem;
+}
+
+.all-container .second-container .top-container .body-logo-container .color4-1tF {
+    width: 15.0848rem;
+    height: 15.0848rem;
+    position: absolute;
+    left: 26.9739rem;
+    top: 42.5739rem;
+    backdrop-filter: blur(1.7236rem);
+    background-color: rgba(241, 149, 98, 0.7300000191);
+    border-radius: 7.5424rem;
+}
+
+.all-container .second-container .top-container .body-logo-container .color4-vEX {
+    width: 14.4rem;
+    height: 14.4rem;
+    position: absolute;
+    left: 36rem;
+    top: 12.2rem;
+    backdrop-filter: blur(3.0164rem);
+    background-color: #f2af8a;
+    border-radius: 7.2rem;
+}
+
+.all-container .second-container .top-container .body-logo-container .color4-dud {
+    width: 11.2rem;
+    height: 11.2rem;
+    position: absolute;
+    left: 37.6rem;
+    top: 13.8rem;
+    backdrop-filter: blur(2.3461rem);
+    border-radius: 5.6rem;
+}
+
+.all-container .second-container .top-container .body-logo-container .body-logo {
+    width: 64rem;
+    height: 54rem;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.all-container .second-container .top-container .body-logo-container .color4-5Wj {
+    width: 8.4rem;
+    height: 8.4rem;
+    position: absolute;
+    left: 10.8rem;
+    top: 11.6rem;
+    border-radius: 4.2rem;
+}
+
+.all-container .second-container .top-container .body-logo-container .rectangle-27-D79 {
+    width: 24.4rem;
+    height: 9.8rem;
+    position: absolute;
+    left: 0;
+    top: 42.8rem;
+    backdrop-filter: blur(3.0164rem);
+    background-color: rgba(241, 117, 48, 0.5);
+    border-radius: 2rem;
+}
+
+.all-container .second-container .top-container .body-logo-container .off-8ju {
+    width: 16.8rem;
+    height: 5.8rem;
+    position: absolute;
+    left: 3.8rem;
+    top: 44.8rem;
+    display: flex;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #ffffff;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+
+.all-container .second-container .top-container .body-logo-container .color4-eCT {
+    width: 13.8rem;
+    height: 13.8rem;
+    position: absolute;
+    left: 8.1rem;
+    top: 8.9rem;
+    background-color: #f2af8a;
+    border-radius: 6.9rem;
+}
+
+.all-container .second-container .group-50-yVd {
+    margin: 0rem 61.157rem 11.563rem 61.17rem;
+    width: calc(100% - 122.3266rem);
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-50-yVd .auto-group-lw39-mtf {
+    margin-right: 0.2725rem;
+    width: 0.3rem;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-50-yVd .auto-group-lw39-mtf .i-Jtb {
+    margin-bottom: 1.487rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.0086rem;
+    font-weight: 600;
+    line-height: 1.2125;
+    color: #000000;
+    font-family: Inter, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-50-yVd .auto-group-lw39-mtf .arrow-1-SE7 {
+    margin-right: 0.0263rem;
+    width: 0;
+    height: 2.7rem;
+    object-fit: contain;
+    vertical-align: top;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us {
+    margin: 0rem 3rem 9.6rem 4rem;
+    box-sizing: border-box;
+    padding: 2.9rem 12.5rem;
+    /* width: calc(100% - 12.3rem); */
+    /* height: 17.1rem; */
+    display: flex;
+    column-gap: 7.7rem;
+    align-items: center;
+    background-color: #0A9055;
+    color: white;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30rem;
+}
+
+.all-container .second-container .about-us .about-users {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .about-users .total-users {
+    display: flex;
+    font-size: 5.377rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: white;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .about-users .happy-customer {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .vector-1-1vj {
+    margin-bottom: 0.1rem;
+    width: 0;
+    height: 10.8rem;
+    object-fit: contain;
+    vertical-align: top;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-86-xb5 {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-86-xb5 .k-W6o {
+    margin-left: 0.1rem;
+    display: flex;
+    font-size: 5.377rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-86-xb5 .products-J2f {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .vector-2-QrP {
+    margin-bottom: 0.1rem;
+    width: 0;
+    height: 10.8rem;
+    object-fit: contain;
+    vertical-align: top;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-87-wLX {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-87-wLX .item-29-U5Z {
+    display: flex;
+    font-size: 5.377rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-87-wLX .countries-yHD {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .vector-3-K6B {
+    margin-bottom: 0.1rem;
+    width: 0;
+    height: 10.8rem;
+    object-fit: contain;
+    vertical-align: top;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-88-FkX {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-88-FkX .k-DBZ {
+    display: flex;
+    font-size: 5.377rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us .group-88-FkX .ratings-MHm {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us2 {
+    margin: 0rem 8.2rem 10rem 9.2rem;
+    width: calc(100% - 17.4rem);
+    height: 58.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.all-container .second-container .about-us2 .about-us22 {
+    margin-right: 2.6rem;
+    width: 55rem;
+    height: 100%;
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: url('../images/laptop2.jpg'); */
+    border-radius: 2rem;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us2 .about-us22 .laptop {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    vertical-align: top;
+    box-shadow: 0 0.4rem 0.8rem rgba(39, 76, 119, 0.1599999964);
+    border-radius: 2rem;
+    border: 2px solid #0A9055;
+}
+
+.all-container .second-container .about-us2 .about-us22 .laptop-text {
+    width: 11.9rem;
+    height: 7.8rem;
+    left: 21.5rem;
+    top: 48.05rem;
+    display: flex;
+    font-size: 5.377rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+
+.all-container .second-container .about-us2 .group-427319367-soq {
+    width: 55rem;
+    height: 100%;
+    position: relative;
+    background-color: #d9d9d9;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/rectangle-47-bg.png');
+    border-radius: 2rem;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .about-us2 .group-427319367-soq .rectangle-50-Dco {
+    width: 55rem;
+    height: 14.5rem;
+    position: absolute;
+    left: 0;
+    top: 44.1rem;
+    object-fit: contain;
+    vertical-align: top;
+}
+
+.all-container .second-container .about-us2 .group-427319367-soq .women-woh {
+    width: 21.6rem;
+    height: 7.8rem;
+    position: absolute;
+    left: 16.6rem;
+    top: 48.05rem;
+    display: flex;
+    font-size: 5.377rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #ffffff;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+
+.all-container .second-container .other-items {
+    margin: 0rem 1.7rem 10rem 1.7rem;
+    width: calc(100% - 3.4rem);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.3476rem;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .other-items .other-items2 {
+    box-sizing: border-box;
+    padding: 0rem 45.5rem 7.1rem 43.2rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .other-items .other-items2 .other-items22 {
+    margin: 0rem 0rem 0.5rem 1.4rem;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1e150e;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .other-items .other-items2 .other-items222 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #4f463f;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .other-items .other-items-pics {
+    width: 100%;
+    display: flex;
+    column-gap: 6.6rem;
+    align-items: center;
+    border-radius: 1.3476rem;
+}
+
+.all-container .second-container .other-items .other-items-pics .boots {
+    width: 37.8rem;
+    height: 37.8rem;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 1.3476rem;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .other-items .other-items-pics .suits {
+    width: 37.8rem;
+    height: 37.8rem;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 1.3476rem;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .other-items .other-items-pics .phones {
+    width: 37.8rem;
+    height: 37.8rem;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 1.3476rem;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .new-arrival-71M {
+    margin: 0rem 0rem 3.6rem 0.6rem;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1e150e;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-79-W5y {
+    box-sizing: border-box;
+    padding-right: 5.8rem;
+    width: 100%;
+    height: 66rem;
+    display: flex;
+    align-items: center;
+    /* background-color: #E2FFFF; */
+    border-radius: 2rem;
+    background-image: url('../images/winner.jpg');
+    background-size: cover;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-s9mv-LKu {
+    margin-right: 7.8rem;
+    box-sizing: border-box;
+    padding: 2rem 9.44rem 1.9rem 9.5rem;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/rectangle-55.png');
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-s9mv-LKu .auction-pic {
+    width: 37.26rem;
+    height: 62.1rem;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-uu5m-k8j {
+    margin: 12.5rem 0;
+    height: calc(100% - 25rem);
+    row-gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-uu5m-k8j .exclusive-deals {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000000;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.auction-text {
+    max-width: 60.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #4f463f;
+    font-family: Jost, 'Source Sans Pro';
+    flex-shrink: 0;
+}
+
+.group-67-SQs {
+    height: 9rem;
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+    border-radius: 2rem;
+    flex-shrink: 0;
+}
+
+.group-66-mxw {
+    box-sizing: border-box;
+    padding: 1.2rem 3.6rem 1.2rem 3.7rem;
+    width: 11rem;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8299999833);
+    border-radius: 2rem;
+    flex-shrink: 0;
+}
+
+.group-62-71D {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-02-4SF {
+    margin-right: 0.2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #000000;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.day-BWs {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #000000;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.group-63-q5d {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-uu5m-k8j .group-67-SQs .group-65-qzj {
+    box-sizing: border-box;
+    padding: 1.2rem 1.9rem 1.2rem 2rem;
+    width: 11rem;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8299999833);
+    border-radius: 2rem;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-uu5m-k8j .group-67-SQs .group-65-qzj .group-60-mtP {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-uu5m-k8j .group-67-SQs .group-65-qzj .group-60-mtP .item-20-LAo {
+    margin-right: 0.8rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #000000;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-uu5m-k8j .group-67-SQs .group-65-qzj .group-60-mtP .minuat-GKM {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.445;
+    color: #000000;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .second-container .group-79-W5y .auto-group-uu5m-k8j .frame-19-a59 {
+    width: 34.4rem;
+    height: 6.8rem;
+    overflow: hidden;
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f17530;
+    border-radius: 2rem;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section {
+    box-sizing: border-box;
+    padding: 8.45rem 3.4rem 8.6rem 7rem;
+    width: 100%;
+    height: 36rem;
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .our-logo-sec {
+    margin: 0rem 7.3rem 4.05rem 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .our-logo-sec .logo-pic {
+    margin-bottom: 2.8rem;
+    width: 14rem;
+    height: 8.4rem;
+    object-fit: cover;
+    vertical-align: top;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .our-logo-sec .discription {
+    max-width: 37.9rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.445;
+    color: #4f463f;
+    font-family: Jost, 'Source Sans Pro';
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-75-pGK {
+    margin-right: 5.3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-75-pGK .shope-Ab5 {
+    margin: 0rem 0rem 1.75rem 0.2rem;
+    display: flex;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-75-pGK .group-72-g3d {
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-75-pGK .group-72-g3d .men-cxs {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #695b51;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-75-pGK .group-72-g3d .women-NBM {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #695b51;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-75-pGK .group-72-g3d .children-WoM {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #695b51;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-74-rcK {
+    margin-right: 6.9rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-74-rcK .service-onT {
+    margin-bottom: 1.75rem;
+    display: flex;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #1e150e;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-74-rcK .group-71-XyM {
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-74-rcK .group-71-XyM .contact-Ts1 {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #695b51;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-74-rcK .group-71-XyM .about-us-1Nj {
+    margin-left: 0.7rem;
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #695b51;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-74-rcK .group-71-XyM .support-8y9 {
+    margin-left: 0.7rem;
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #695b51;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-73-57h {
+    margin: 2.65rem 0rem 2.654rem 0rem;
+    width: 52.7rem;
+    height: calc(100% - 5.3038rem);
+    flex-shrink: 0;
+}
+
+.all-container .footer-section .group-76-rqH .group-73-57h .exclusive-deals-Ci7 {
+    margin-bottom: 2.1537rem;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000000;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+}
+
+.all-container .footer-section .group-76-rqH .group-73-57h .group-70-XkP {
+    width: 100%;
+    height: 6.0925rem;
+    position: relative;
+}
+
+.all-container .footer-section .group-76-rqH .group-73-57h .group-70-XkP .rectangle-60-fbh {
+    width: 37.1642rem;
+    height: 6.0925rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: contain;
+    vertical-align: top;
+}
+
+.all-container .footer-section .group-76-rqH .group-73-57h .group-70-XkP .enter-your-email-CrX {
+    width: 13.2rem;
+    height: 2.7rem;
+    position: absolute;
+    left: 3.3509rem;
+    top: 1.7016rem;
+    display: flex;
+    font-size: 1.8277rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #fcfcfc;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+
+.all-container .footer-section .group-76-rqH .group-73-57h .group-70-XkP .rectangle-61-uF9 {
+    width: 18.049rem;
+    height: 6.0925rem;
+    position: absolute;
+    left: 34.651rem;
+    top: 0;
+    object-fit: contain;
+    vertical-align: top;
+}
+
+.all-container .footer-section .group-76-rqH .group-73-57h .group-70-XkP .subscribe-EoD {
+    width: 12.6rem;
+    height: 3.6rem;
+    position: absolute;
+    left: 37.3926rem;
+    top: 1.2446rem;
+    display: flex;
+    font-size: 2.437rem;
+    font-weight: 500;
+    line-height: 1.445;
+    color: #ffffff;
+    font-family: Jost, 'Source Sans Pro';
+    white-space: nowrap;
+}
+
+
+/* ////////////////////auction-time///////////////////// */
+
+.auction-time {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    font-family: Jost, 'Source Sans Pro';
+}
+
+.auction-time div {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    flex-basis: 100px;
+    background-color: white;
+    border-radius: 15%;
+}
+
+.auction-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+
+/* ////////////////responsive/////////////////// */
+
+@media (max-width: 1200px) {
+    .top-container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .all-container {
+        font-size: smaller;
+    }
+    * {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 850px) {
+    .top-container {
+        flex-wrap: wrap;
+    }
+    .all-container {
+        font-size: smaller;
+    }
+    .about-us2 {
+        flex-wrap: wrap;
+    }
+    .about-us22 {
+        display: none;
+    }
+}
+
+@media (max-width: 530px) {
+    .body-logo-container {
+        margin-top: 20rem;
+    }
+    .about-us {
+        margin-top: 40rem;
+    }
+}

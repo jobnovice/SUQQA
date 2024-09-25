@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Desktop - 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A600" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost%3A400%2C500%2C600" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="./desktop-1.css?v=1" />
+    <link rel="stylesheet" href="./responsive.css">
+
+</head>
+
+<style>
+    .suqqa {
+        transition: 0.3s;
+        font-weight: 700;
+        color: #0A9055;
+    }
+    
+    .suqqa:hover {
+        -webkit-text-stroke: 1px #0A9055;
+        color: transparent;
+    }
+    
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 1%;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    @media (max-width: 850px) {
+        .about-us2 {
+            flex-wrap: wrap;
+        }
+        .checkbtn {
+            display: block;
+        }
+        .links ul {
+            position: fixed;
+            width: 110%;
+            height: 100vh;
+            top: 80px;
+            left: -110%;
+            text-align: center;
+            background-color: #000000;
+            flex-direction: column;
+            transition: all 1.5s;
+            /* display: none; */
+        }
+        .links ul li {
+            display: block;
+            background-color: black;
+        }
+        .links ul li:hover {
+            border-radius: 0;
+        }
+        .links ul li a {
+            font-size: 20px;
+        }
+        #check:checked~.navbar-links .links ul {
+            /* display: block; */
+            left: -5%;
+            /* left: 0; */
+        }
+        .other-items-pics {
+            flex-wrap: wrap;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+
+
+        <nav class="navbar">
+            <input type="checkbox" name="" id="check">
+            <div class="navbar-links">
+
+                <div class="logo">
+                    <img src="../images/logo_image.png" alt="logo image" style="height: 100px; width: 100px;">
+
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#about">Items</a></li>
+                        <li><a href="registrationp/one.php">sign-up</a></li>
+                        <li><a href="#skills">Ads</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars" ></i>
+            </label>
+
+        </nav>
+
+    </header>
+
+    <div class="all-container">
+
+
+        <div class="second-container">
+            <div class="top-container">
+                <div class="logo-moto-container">
+                    <p class="moto">
+                        <span class="moto-text"><span class="suqqa">SUQQA ሱቃ</span> <br>Empowering seamless shopping experiences </span>
+                        <span class="moto-text2">one click at a time.</span>
+                    </p>
+                    <p class="second-moto">Connecting Ethiopian consumers and businesses with a world of products and opportunities, revolutionizing the way you shop and sell online. <br>ባሉበት ቦታ ሆነዉ የፈለጉትን እቃ የሚያግኙበት ትክክልኛ ቦታ:: <br>ሊንኩን በመንካት ይቀላቀሉ👇🏾፡፡</p>
+                    <div class="sign-up">
+                        <button class="go-home" onclick="navigateTosignup()">Sign up</button>
+                        <script>
+                            function navigateTosignup() {
+                                window.location.href = "http://localhost/proj/home/registrationp/one.php";
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="body-logo-container">
+
+                    <img class="body-logo" src="../images/logo_image.png" />
+                </div>
+            </div>
+            <div class="group-50-yVd">
+                <br><br><br><br><br>
+
+            </div>
+
+            <!-- //////////about us section/////////// -->
+
+            <div class="about-us">
+                <div class="about-users">
+
+                    <h1 class="total-users">10+</h1>
+                    <h2 class="happy-customer">Happy customer</h2>
+                </div>
+
+                <div class="about-users">
+                    <h1 class="total-users">50+</h1>
+                    <h2 class="happy-customer">Products</h2>
+                </div>
+                <div class="about-users">
+                    <h1 class="total-users">6</h1>
+                    <h2 class="happy-customer">Cities in Ethiopia</h2>
+                </div>
+                <div class="about-users">
+                    <h1 class="total-users">8+</h1>
+                    <h2 class="happy-customer">Item categories</h2>
+                </div>
+            </div>
+            <!-- /////////about us2//////////// -->
+            <div class="about-us2">
+                <div class="about-us22">
+                    <img class="laptop" src="../images/laptop2.jpg" />
+                    <div class="laptop-text">Laptops</div>
+                </div>
+                <div class="about-us22">
+                    <img class="laptop" src="../images/desktop.webp" />
+                    <div class="laptop-text">Desktops</div>
+                </div>
+            </div>
+            <div class="other-items">
+                <div class="other-items2">
+                    <p class="other-items22">OTHER ITEMS</p>
+                    <p class="other-items222">AND MANY OTHER PRODUCTS IN ONE PLACE</p>
+                </div>
+                <div class="other-items-pics">
+                    <img class="boots" src="../images/manchester.png=z-780,780_f-webp" />
+                    <img class="suits" src="../images/suit3.avif" />
+                    <img class="phones" src="../images/phones.png" />
+                </div>
+            </div>
+            <p class="new-arrival-71M">NEW ARRIVAL</p>
+
+            <div class="group-79-W5y">
+                <div class="auto-group-s9mv-LKu">
+                    <img class="auction-pic" src="../images/auction2.png" />
+                </div>
+                <div class="auto-group-uu5m-k8j">
+                    <p class="exclusive-deals">Exclusive deal <br>Auction system</p>
+                    <p class="auction-text">We are excited to present our exclusive deal: an advanced <span style="color:#0A9055;">auction system</span> that brings a new level of competitiveness and excitement to your online buying and selling experience.</p>
+                    <div class="auction-time">
+                        <div>
+                            <p id="days">00</p>
+                            <span>Days</span>
+                        </div>
+
+                        <div>
+                            <p id="hours">00</p>
+                            <span>Hours</span>
+
+                        </div>
+                        <div>
+                            <p id="minutes">00</p>
+                            <span>Minutes</span>
+
+                        </div>
+                        <div>
+                            <p id="seconds">00</p>
+                            <span>Seconds</span>
+
+                        </div>
+                    </div>
+                    <div class=""> <button class="go-home" onclick="navigateTosignup()">Shop Now</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /////////////////contact us/////////////// -->
+        <footer>
+
+            <div class="footer-section">
+                <div class="our-logo-sec">
+                    <img class="logo-pic" src="../images/logo_image.png" />
+                    <p class="discription">የጨረታ ሲስተምን ጨምሮ ባሉበት ቦታ ሆነዉ የፈለጉትን እቃ የሚያግኙበት ትክክልኛ ቦታ::በኢትዮጵያ ከ6 ከተሞች በላይ፣ ከ10 በላይ ሻጭዎች እና ገዥዎች ሚገኙበት፡፡ </p>
+                </div>
+                <div class="group-76-rqH">
+                    <div class="group-75-pGK">
+                        <div class="shope-Ab5">SHOP</div>
+                        <div class="group-72-g3d">
+                            <div class="men-cxs">New</div>
+                            <div class="women-NBM">Used</div>
+                            <div class="children-WoM">Email:</div>
+                        </div>
+                    </div>
+                    <div class="group-74-rcK">
+                        <div class="service-onT">SERVICE</div>
+                        <div class="group-71-XyM">
+                            <div class="contact-Ts1">Contact</div>
+                            <div class="about-us-1Nj">About us</div>
+                            <div class="support-8y9">suqqa@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="group-73-57h">
+                        <a class="btn go-home" style="text-decoration: none;" href="mailto:mmengesha27@email.com">CONTACT US</a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var nav = document.querySelector("header");
+            var checkbox = document.getElementById("check");
+
+            if (!checkbox.checked) {
+                nav.classList.toggle("sticky", window.scrollY > 0);
+            }
+        });
+        let countDown = new Date("Feb 16, 2024 00:00:00").getTime();
+        let x = setInterval(function() {
+            let now = new Date().getTime();
+            let distance = countDown - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+
+
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
